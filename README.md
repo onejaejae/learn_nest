@@ -77,3 +77,5 @@ Nest is [MIT licensed](LICENSE).
 <br>
 
 https://velog.io/@chappi/Nestjs%EB%A5%BC-%EB%B0%B0%EC%9B%8C%EB%B3%B4%EC%9E%90-9%EC%9D%BC%EC%B0%A8-Repository%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-Board-CRUD
+
+https://ganzicoder.tistory.com/163
