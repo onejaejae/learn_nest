@@ -12,7 +12,9 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
     private userRepository: UserRepository,
   ) {
     super({
+      // jwt 토큰을 생성할 때 사용되는 키인데 절대로 외부에 노출되면 안 되는 값이므로 환경변수나 config 로 빼서 사용하는 것을 권장한다
       secretOrKey: 'Secret1234',
+      // jwt로 생성해서 클라이언트 측으로 보냈던 Token 값을 헤더에 Bearer Token 값으로 포함하여 호출해야 서버단에서 토큰을 받아 검사할 수 있다.
       jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
     });
   }

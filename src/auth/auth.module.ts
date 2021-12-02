@@ -11,6 +11,7 @@ import { UserRepository } from './user.Repository';
   imports: [
     PassportModule.register({ defaultStrategy: 'jwt' }),
     JwtModule.register({
+      // 키를 보호해야 합니다.
       secret: 'Secret1234',
       // 1시간 유효
       signOptions: { expiresIn: 60 * 60 },
